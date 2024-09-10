@@ -1,0 +1,8 @@
+
+.nominate-cards{
+  flex:1;
+  gap: 6rem;
+}
+.nominate-card{
+  flex: 1;
+}

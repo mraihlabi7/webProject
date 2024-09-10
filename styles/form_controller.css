@@ -1,0 +1,67 @@
+
+
+.table {
+    margin-top: 1.2rem;
+    padding: 0.8rem
+}
+
+.table>:not(caption)>*>* {
+    padding: 1.5rem
+}
+
+@media (max-width:500px) {
+    .table>:not(caption)>*>* {
+        padding: 1.2rem
+    }
+}
+
+
+@media (max-width:500px) {
+    .table thead tr th {
+        font-size: 1.2rem;
+    }
+}
+
+.table thead tr th {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-align: right;
+    color: #424242;
+}
+
+@media (max-width:500px) {
+    .table thead tr th {
+        font-size: 1.2rem;
+    }
+}
+
+label.check-table,
+.table tbody tr td {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: right;
+    color: #424242;
+}
+
+@media (max-width:500px) {
+    label.check-table,
+    .table tbody tr td {
+        font-size: 1.6rem;
+        text-wrap: nowrap;
+    }
+}
+
+.table .form-check-input {
+    float: right;
+    margin-left: 0.6rem;
+    margin-right: 0px;
+    padding: 0.9rem;
+}
+
+@media (max-width:500px) {
+    .table .form-check-input {
+        padding: 0.4rem;
+    }
+}

@@ -1,0 +1,93 @@
+
+@media (max-width:500px) {
+  .main-container-question {
+    grid-template-areas: "header header " 
+     "search search"
+    "question question"
+    "main main";
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+}
+@media(max-width:500px) {
+  .menu {
+      display: block;
+      padding: 1.1rem 1.3rem;
+      background-color: #FCFCFC;
+      border-radius: 5px;
+      box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.08);
+  }
+  .menu img {
+      width: 20px;
+      height: 20px;
+      object-fit: cover;
+  }
+}
+
+@media (max-width:500px) {
+  .aside {
+      position: absolute;
+      z-index: 9999;
+      height: calc(100% - 8rem);
+      top: 8rem;
+  }
+  .show-aside {
+      display: none;
+  }
+}
+
+
+.table {
+  margin-top: 1.2rem;
+  padding: 0.8rem
+}
+
+.table>:not(caption)>*>* {
+  padding: 1.5rem
+}
+
+
+
+
+.table thead tr th {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-align: right;
+  color: #424242;
+  text-wrap: nowrap;
+
+}
+
+#number-table{
+  color: #167CC8;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: right;
+  line-height: 19.2px;
+}
+label.check-table,
+.table tbody tr td {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: right;
+  color: #424242;
+  text-wrap: nowrap;
+}
+
+
+
+.table .form-check-input {
+  float: right;
+  margin-left: 0.6rem;
+  margin-right: 0px;
+  padding: 0.9rem;
+}
+
+@media (max-width:800px) {
+  .table .form-check-input {
+      padding: 0.4rem;
+  }
+}
+

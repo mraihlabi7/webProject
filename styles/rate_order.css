@@ -1,0 +1,33 @@
+.main-loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.loading-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+ 
+}
+.loading-inner{
+  padding: 7.9rem 10.1rem;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.loading-inner img{
+  width: 380px;
+  height: 317.83px;
+  object-fit: cover;
+}
+.loading-inner svg{
+  stroke: #fff;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+

@@ -88,25 +88,25 @@
                 </div>
                 <div class="sections-container">
                   <div class="data-section" id="first-question-section">
-                    <form class="form" id="dropArea">
-                      <div class="drag-drop" draggable="true">
-                        <img src="./images/icons/dragdrop.svg" alt="drog drop  icon" class="draggable"  draggable="true" ondragstart="dragStart(event)"/>
+                    <form class="form" id="containers">
+                      <div class="draggable" draggable="true">
+                        <img src="./images/icons/dragdrop.svg" alt="drog drop  icon"  />
                         <input type="text" class="form-control general-control" id="exampleInputName" aria-describedby="textHelp" placeholder="العبارة ( مثال : ما سنك؟ )">
                   
                       </div>
-                      <div class="drag-drop" draggable="true">
-                        <img src="./images/icons/dragdrop.svg" alt="drag drop icon" class="draggable"  draggable="true" ondragstart="dragStart(event)"/>
+                      <div class="draggable" draggable="true">
+                        <img src="./images/icons/dragdrop.svg" alt="drag drop icon"  />
                         <input type="text" class="form-control general-control second" id="exampleInputName" aria-describedby="textHelp" placeholder="المتغير الأول ( مثال : من 20 ل25 سنة )">
                         <div class="add-variable" id="add_var">
                           <img src="./images/icons/plus.svg" alt="plus icon"/>
                           <p>أضف متغير</p>
                         </div>
                       </div>
-                      <div class="drag-drop" draggable="true">
-                        <img src="./images/icons/dragdrop.svg" alt="drag drop icon" class="draggable"  draggable="true" ondragstart="dragStart(event)"/>
+                      <div class="draggable" draggable="true">
+                        <img src="./images/icons/dragdrop.svg" alt="drag drop icon"   />
                         <input type="text" class="form-control general-control" id="exampleInputName" aria-describedby="textHelp" placeholder="المتغير الثاني ( مثال : من 20 ل25 سنة )">
                         <div class="add-variable">
-                          <img src="./images/icons/plus.svg" alt="plus icon" />
+                          <img src="./images/icons/plus.svg" alt="plus icon" onclick="addVariableItem(this)" />
                           <p onclick="addVariableItem(this)" id="add-variable-small">أضف متغير</p>
                         </div>
                       </div>
@@ -114,7 +114,7 @@
                   </div>
                 </div>
                 <div class="add-section">
-                  <img src="./images/icons/plus.svg" alt="add plus icon"/>
+                  <img src="./images/icons/plus.svg" alt="add plus icon" onclick="addNewSection()"/>
                   <p onclick="addNewSection()">أضف فقرة</p>
                 </div>
                 <div class="main-data">
@@ -152,23 +152,30 @@
                           <p>البعد الاول</p>
                         </header>
                         <div class="form">
-                          <div class="form-item">
-                            <input type="text" class="form-control general-control" id="exampleInputName" aria-describedby="textHelp" placeholder="العبارة ( مثال : ما سنك؟ )">
-                      
-                          </div>
+                            <div class="form-item form-item-outer-area" id="containers-area">
+                              <div class="area-form-item draggable" draggable="true">
+                                <img src="./images/icons/dragdrop.svg" alt="drog drop  icon"  />
+                                <input type="text" class="form-control general-control" id="exampleInputName" aria-describedby="textHelp" placeholder="العبارة ( مثال : ما سنك؟ )">
+                                <div class="add-variable">
+                                  <img src="./images/icons/plus.svg" alt="plus icon" onclick="addVariableItem2(this)"/>
+                                  <p onclick="addVariableItem2(this)" id="add-variable-small">أضف متغير</p>
+                                
+                              </div>
+                            </div>
+                            </div>
                           <div class="concepts-container">
                             <p class="concepts">العبارات</p>
-                            <div class="concepts-container-item" id="dropArea">
-                              <div class="drag-drop" draggable="true">
-                                <img src="./images/icons/dragdrop.svg" alt="drag drop icon" class="draggable"  draggable="true" ondragstart="dragStart(event)"/>
+                            <div class="concepts-container-item" id="containers-concepts">
+                              <div class="draggable" draggable="true">
+                                <img src="./images/icons/dragdrop.svg" alt="drag drop icon"   />
                                 <input type="text" class="form-control general-control second" id="exampleInputName" aria-describedby="textHelp" placeholder="المتغير الأول ( مثال : من 20 ل25 سنة )">
                                 <div class="trash-icon"><button onclick="deleteItem(this)"><img src="./images/icons/trash.svg" alt="trash icon" /></button></div>
                               </div>
-                              <div class="drag-drop" draggable="true">
-                                <img src="./images/icons/dragdrop.svg" alt="drag drop icon" class="draggable"  draggable="true" ondragstart="dragStart(event)"/>
+                              <div class="draggable" draggable="true">
+                                <img src="./images/icons/dragdrop.svg" alt="drag drop icon" />
                                 <input type="text" class="form-control general-control second" id="exampleInputName" aria-describedby="textHelp" placeholder="المتغير الأول ( مثال : من 20 ل25 سنة )">
                                 <div class="add-variable">
-                                  <img src="./images/icons/plus.svg" alt="plus icon"/>
+                                  <img src="./images/icons/plus.svg" alt="plus icon" onclick="addVariableItem(this)"/>
                                   <p onclick="addVariableItem(this)" id="add-variable-small">أضف متغير</p>
                                 </div>
                               </div>
@@ -182,7 +189,7 @@
 
                 </div>
                 <div class="add-section">
-                  <img src="./images/icons/plus.svg" alt="add plus icon"/>
+                  <img src="./images/icons/plus.svg" alt="add plus icon" onclick="addNewSectionSecondContainer()"/>
                   <p onclick="addNewSectionSecondContainer()">أضف فقرة</p>
                 </div>
                 <!-- <div class="main-data" id="third-question-section">
